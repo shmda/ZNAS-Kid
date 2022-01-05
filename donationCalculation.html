@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<title>DonationForm</title>
+<img 	class= "logo" style="width:10%" src= "logo.png">
+
+
+<head>
+	<link rel="stylesheet" href="donationCalculation.css">
+	<script>
+
+		function calculateTotal(){
+			//if no input
+			if(document.calc.amount.value == null || document.calc.amount.value.length == 0){
+				alert("Error! Please enter your preferred amount!");
+			}else{
+				var amount = document.calc.amount.value;
+				var total;
+				if(amount < 500){
+					var fee1 = 1.00
+					document.calc.fee.value = fee1.toFixed(2);
+					total = +amount + fee1;
+					document.calc.total.value = total.toFixed(2);
+				}
+				else{
+					var fee2 = 0.50;
+					document.calc.fee.value = fee2.toFixed(2);
+					total = +amount + fee2;
+					document.calc.total.value = total.toFixed(2);
+			}
+		}
+	}
+	</script>
+	
+
+</head>
+<body>
+	<ul class="horizontal">
+			<li><button id="index" class= "block" onclick="window.location.href='Index.html'">Home</button></li>
+			<li class="dropdown">
+				<button class="dropbtn active">Articles
+    				</button>
+				<div class="dropdown-content">
+      					<a href="news.html">News</a>
+      					<a href="health.html">Health</a>
+      					<a href="activities.html">Activities</a>
+    				</div>
+			</li>
+			<li><button id="class" class= "block" onclick="window.location.href='Class.html'">Class</button></li>
+			<li><button id="donation" class= "block active" onclick="window.location.href='Donation.html'">Donation</button></li>
+			<li style="float:right"><button id="aboutUs" class= "block" onclick="window.location.href='Aboutus.html'">About Us</button></li>
+		</ul>
+	
+	<div class="bg">
+	<br>
+	<br>
+	
+
+<div>
+  <form name = "calc" method="post">
+    <label for="amount">Amount</label>
+    <input type="text" id="amount" name="amount" placeholder="RM">
+		<label for="fee">Bank Administration Fee</label>
+    <input type="text" id="fee" name="fee" value="0.00" disabled>
+
+    <label for="total">Total Amount<label>
+    <input type="text" id="total" name="total" value="0.00" disabled>
+    <input type="button" value="Calculate" onClick="calculateTotal()" width: 100%>
+		<a href="Donation.html">
+			<input class="button1" type="button" value="Donate">
+		</a>
+  </form>
+
+</div>
+
+
+		<footer></br>
+		  <i><p class="p2" text-align: right; >Copyright &copy 2021 ZNAS KID  OFFICIAL</p></i>
+		</br></footer>
+	</div>
+		
+</body>
+</html>

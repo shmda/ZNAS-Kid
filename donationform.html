@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<head>
+	<title>DonationForm</title>
+	<img 	class= "logo" style="width:10%" src= "logo.png">
+
+	<link rel="stylesheet" href="donationform.css">
+	</head>
+
+	<body>
+		<ul class="horizontal">
+			<li><button id="index" class= "block" onclick="window.location.href='Index.html'">Home</button></li>
+			<li class="dropdown">
+				<button class="dropbtn active">Articles
+    				</button>
+				<div class="dropdown-content">
+      					<a href="news.html">News</a>
+      					<a href="health.html">Health</a>
+      					<a href="activities.html">Activities</a>
+    				</div>
+			</li>
+			<li><button id="class" class= "block" onclick="window.location.href='Class.html'">Class</button></li>
+			<li><button id="donation" class= "block active" onclick="window.location.href='Donation.html'">Donation</button></li>
+			<li style="float:right"><button id="aboutUs" class= "block" onclick="window.location.href='Aboutus.html'">About Us</button></li>
+		</ul>
+
+		<div class="bg">
+			<div></br>
+		</div>
+
+		<div class="row">
+		<div class="column">
+		<div class="container">
+			 <div class="text"><br>Personal Information<br><br></div>
+			 <form action="#">
+				 <div class="form-row">
+					 <div class="input-data">
+						 <input type="text" id="fn" required>
+						 <div class="underline"></div>
+						 <label for="">First Name</label>
+					 </div>
+				 </div>
+				 	<div class="form-row">
+					 <div class="input-data">
+						 <input type="text" required>
+						 <div class="underline"></div>
+						 <label for="">Last Name</label>
+					 </div>
+				 </div>
+				 <div class="form-row">
+					 <div class="input-data">
+						 <input type="text" required>
+						 <div class="underline"></div>
+						 <label for="">Email Address</label>
+					 </div>
+				 </div>
+				 <div class="form-row">
+					 <div class="input-data">
+						 <input type="text" required>
+						 <div class="underline"></div>
+						 <label for="">Phone Number</label>
+					 </div>
+				 </div>
+			 </form>
+		 </div> </div>
+
+		 <div class="column">
+			 <div class="container">
+					<div class="text"><br>Card Information<br><br></div>
+					<form action="#">
+						<div class="form-row">
+							<div class="input-data">
+								<input type="text" required>
+								<div class="underline"></div>
+								<label for="">Name on Card</label>
+							</div>
+							<div class="input-data">
+								<input type="text" required>
+								<div class="underline"></div>
+								<label for="">Card Number</label>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="input-data">
+								<input type="date" required>
+								<div class="underline"></div>
+								<label for=""></label>
+							</div>
+							<div class="input-data">
+								<input type="text" maxlength="4" required>
+								<div class="underline"></div>
+								<label for="">CVV</label>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="input-data ">
+							 <input type="text" required>
+								<div class="underline"></div>
+								<label for="">Country</label>
+							</div>
+						</div>
+					</form>
+				<img 	class= "logo" style="width:20%" src= "visa.png">
+			 </div>
+			 <form>
+				 <a href="donationCalculation.html">
+					 <input class="button" type="button" value="Next" >
+				 </a>
+			 </form>
+		 </div>
+	 </div>
+
+				 <br><footer></br>
+		  			<i><p class="p2" text-align: right; >Copyright &copy 2021 ZNAS KID  OFFICIAL</p></i>
+				</br></footer>
+		
+	</body>
+</html>

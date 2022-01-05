@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+	<title>Index</title>
+	<img 	class= "logo" style="width:10%" src= "logo.png">
+	<link rel="stylesheet" href="index.css">
+	</head>
+
+
+	<body>
+		
+		<ul class="horizontal">
+			<li><button id="index" class= "block active" onclick="window.location.href='Index.html'">Home</button></li>
+			<li class="dropdown">
+				<button class="dropbtn active">Articles
+    				</button>
+				<div class="dropdown-content">
+      					<a href="news.html">News</a>
+      					<a href="health.html">Health</a>
+      					<a href="activities.html">Activities</a>
+    				</div>
+			</li>
+			<li><button id="class" class= "block" onclick="window.location.href='Class.html'">Class</button></li>
+			<li><button id="donation" class= "block" onclick="window.location.href='Donation.html'">Donation</button></li>
+			<li style="float:right"><button id="aboutUs" class= "block" onclick="window.location.href='Aboutus.html'">About Us</button></li>
+		</ul>
+
+		<content>
+		
+		<div class="sky">		
+		<br><br><br><br>
+		<button class="button1" onClick="document.getElementById('whyUs').scrollIntoView();">Why Us?</button>
+		</div>
+		<div>
+		<ul class="row wrap">
+ 			<li class="column">
+    				<a href="https://news.yahoo.com/10-ways-parents-teach-kids-164200564.html">
+				<img class="picture" src="https://s.yimg.com/ny/api/res/1.2/cKyggA4pEzYvA3E1bVnsLQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTcwNTtoPTM1NDtjZj13ZWJw/https://s.yimg.com/uu/api/res/1.2/wm7.FimkidH4WpzY9wEYIQ--~B/aD01MDI7dz0xMDAwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/good_housekeeping_561/14d28cea17ec62cfe3d56e22726e95e2">
+  				Trending News: 10 Ways Parents Can Teach Kids to Feel Good About Their Bodies, According to a Dietitian</a>
+			</li>
+  			<li class="column">
+				<a href="ScienceO1.html">
+    				<img class="picture" src="Science.png" >Recommended class
+  			</a></li>
+		</ul>
+		
+		</div>
+
+		<p id="motto"></p>
+
+		<div id="whyUs">
+			<p id="desc"></p>
+			<h2 class="reason">Why You should Choose Us?</h2>
+			<ol type="1">
+				<li id="reason1"></li><br>
+				<li id="reason2"></li><br>
+				<li id="reason3"></li><br>
+			</ol>
+		
+		</div><br>
+
+		<br>
+		<h2 class="reason">The Importance of Early Childhood Education</h2>
+		<video  class="video"  controls>
+  			<source src="The Importance of Early Childhood Education.mp4" type="video/mp4">	
+		</video>
+
+		<br>
+		<h2 class="reason">Achieving Sustainable Development Goals with ZNAS Kid</h2>
+		<ul class="row wrap">
+ 			<li class="column">
+    				<video  class="picture"  controls>
+  					<source src="Quality Education.mp4" type="video/mp4">	
+				</video>
+				<p>Goal 4: Quality Education</p>
+			</li>
+  			<li class="column">
+				<video  class="picture"  controls>
+  					<source src="Zero Hunger.mp4" type="video/mp4">	
+				</video>
+				<p>Goal 2: Zero Hunger</p>
+  			</li>
+		</ul>
+
+		<footer></br>
+		  <i><p class="p2" text-align: right; >Copyright &copy 2021 ZNAS KID  OFFICIAL</p></i>
+		</br></footer>
+		
+		</content>
+	<script>
+		document.getElementById("motto").innerHTML = "Safe. Caring. Educate";
+		document.getElementById("desc").innerHTML = "ZNAS Kid provides trusted early education service for your dear children. With 20 years of experience and reccomended by the Ministry of Education of Malaysia.";
+		document.getElementById("reason1").innerHTML = "Our program employs experienced, qualified, and trusted teachers who are dedicated to establishing a foundation for our students' lifelong learning.";
+		document.getElementById("reason2").innerHTML = "With modern, safe, and complete facilities, we provide the perfect environment for your children to learn.";
+		document.getElementById("reason3").innerHTML = "Parents are actively encouraged to participate in the education of their children by being given updates on their children's development and consultation about parenting at home.";
+
+	</script>
+
+	</body>
+
+</html>
